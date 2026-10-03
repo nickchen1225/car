@@ -1,0 +1,1 @@
+window.IR=window.IR||{};IR.store={get(k,d){try{let x=localStorage.getItem("iron_"+k);return x===null?d:JSON.parse(x)}catch(e){return d}},set(k,v){try{localStorage.setItem("iron_"+k,JSON.stringify(v))}catch(e){}}};IR.controls=Object.assign({up:"KeyW",left:"KeyA",down:"KeyS",right:"KeyD",reload:"KeyR"},IR.store.get("controls",{}));

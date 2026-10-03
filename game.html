@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IRON RANGE // GAME</title><link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+<div class="game-shell">
+<header class="hud-top">
+  <a href="index.html" class="back">← MENU</a>
+  <div class="mission"><small>TRAINING RANGE</small><strong id="wave">WAVE 01</strong></div>
+  <div class="status"><span>SCORE <b id="score">0</b></span><span>KILLS <b id="kills">0</b></span><span>COMBO <b id="combo">x1</b></span></div>
+</header>
+<main class="arena-wrap">
+  <canvas id="game" width="1100" height="680"></canvas>
+  <div class="crosshair" id="crosshair"></div>
+  <div class="hitmarker" id="hitmarker">×</div>
+  <div class="damage" id="damage"></div>
+  <div class="center-msg" id="centerMsg">
+    <strong id="msgTitle">READY</strong><span id="msgSub">CLICK / PRESS A TO START</span>
+  </div>
+  <div class="bottom-hud">
+    <div class="health"><small>HEALTH</small><div><span id="hpbar"></span></div><b id="hp">100</b></div>
+    <div class="weapon"><small>WEAPON // AR-01</small><strong id="ammo">30</strong><span>/ 120</span><button id="reload">R RELOAD</button></div>
+  </div>
+</main>
+<div class="touch">
+  <button data-key="KeyA">A</button><button data-key="KeyS">S</button><button data-key="KeyD">D</button>
+  <button class="reload-touch" id="touchReload">↻</button>
+</div>
+<footer>WASD MOVE · MOUSE AIM · CLICK FIRE · R RELOAD · ESC PAUSE · XBOX LEFT STICK / RT</footer>
+</div>
+<script src="js/app.js"></script><script src="js/game.js"></script>
+</body></html>

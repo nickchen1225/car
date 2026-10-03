@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IRON RANGE // SETTINGS</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav"><a class="brand" href="index.html"><span>IR</span> IRON RANGE</a><nav><a href="index.html">首頁</a><a href="game.html">遊戲</a><a class="active" href="settings.html">設定</a></nav></header>
+<main class="settings">
+<section class="setting-panel">
+<div class="eyebrow">SYSTEM / INPUT</div><h1>CONTROL<br><em>SETTINGS</em></h1>
+<p>點擊按鍵，再按下你想使用的鍵。設定會保存在目前瀏覽器。</p>
+<div class="binds">
+<label>MOVE UP <button data-bind="up"></button></label>
+<label>MOVE LEFT <button data-bind="left"></button></label>
+<label>MOVE DOWN <button data-bind="down"></button></label>
+<label>MOVE RIGHT <button data-bind="right"></button></label>
+<label>RELOAD <button data-bind="reload"></button></label>
+</div>
+<div class="setting-actions"><button class="play" id="save">SAVE SETTINGS →</button><button class="ghost" id="reset">RESET DEFAULTS</button><a class="ghost" href="game.html">BACK TO GAME</a></div>
+<div class="pad"><b>XBOX / USB GAMEPAD</b><span id="padStatus">等待手把連線…</span><small>左類比：移動　RT：射擊　RB：換彈　A：開始</small></div>
+</section>
+</main>
+<footer>IRON RANGE / INPUT CONFIGURATION</footer>
+<script src="js/app.js"></script><script src="js/settings.js"></script>
+</body></html>
